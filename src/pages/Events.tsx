@@ -10,21 +10,21 @@ const events = [
     date: 'April 12 - 14, 2026',
     time: '10:00am - 4:00pm',
     desc: 'Join us for our annual Easter celebration! Egg hunts in the orchard, meet the farm animals, and seasonal treats from the shop.',
-    image: getAssetPath('/images/easterfest-banner.png')
+    image: getAssetPath('images/easterfest-banner.png')
   },
   {
     title: 'Strawberry Festival',
     date: 'June 21, 2026',
     time: '9:00am - 6:00pm',
     desc: 'Celebrating the peak of strawberry season. Live music, strawberry cream teas, and the best picking of the year.',
-    image: getAssetPath('/images/strawberry-festival.png')
+    image: getAssetPath('images/strawberry-festival.png')
   },
   {
     title: 'Harvest Supper',
     date: 'September 15, 2026',
     time: '7:00pm - 10:00pm',
     desc: 'An intimate long-table dinner in the fields, featuring a multi-course menu crafted entirely from our own harvest.',
-    image: getAssetPath('/images/harvest-supper.png')
+    image: getAssetPath('images/harvest-supper.png')
   }
 ];
 

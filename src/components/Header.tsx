@@ -49,7 +49,7 @@ export function Header() {
         <Link to="/" className="text-2xl font-headline font-bold text-primary uppercase tracking-widest flex items-center gap-2">
           <span className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">T</span>
           <img 
-            src={getAssetPath('images/tacons-logo.png')} 
+            src={getAssetPath('images/tacons-logo-favicon.png')} 
             alt="The Tacons Logo" 
             className="w-8 h-8 object-contain brightness-0 invert"
           />

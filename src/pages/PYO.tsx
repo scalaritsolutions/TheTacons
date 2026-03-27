@@ -61,7 +61,7 @@ export function PYO() {
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform rotate-2 border-8 border-white">
               <img 
                 className="w-full h-full object-cover" 
-                src={getAssetPath('/images/strawberry-fields.png')} 
+                src={getAssetPath('images/strawberry-fields.png')} 
                 alt="Strawberries in field"
               />
             </div>
@@ -176,7 +176,7 @@ export function PYO() {
           <div className="absolute inset-0">
             <img 
               className="w-full h-full object-cover opacity-50 scale-105" 
-              src="/images/strawberry-fields.png" 
+              src={getAssetPath('images/strawberry-fields.png')} 
               alt="Norfolk fields"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-transparent" />
