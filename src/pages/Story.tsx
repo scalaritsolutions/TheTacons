@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { History, Award, Heart, Users } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
+import { History, Award, Heart, Users, Sprout, ArrowRight } from 'lucide-react';
 
 export function Story() {
   return (
@@ -35,7 +36,7 @@ export function Story() {
           >
             <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl skew-y-1 border-8 border-white">
               <img 
-                src="/images/farm-shop-interior.png" 
+                src={getAssetPath('images/farm-shop-interior.png')} 
                 alt="Original farm shop" 
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />

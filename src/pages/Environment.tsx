@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { getAssetPath } from '../utils/assets';
 import { ShieldCheck, Leaf, Recycle, Heart, Droplets, Sun } from 'lucide-react';
 
 export function Environment() {
@@ -62,7 +63,7 @@ export function Environment() {
           >
             <div className="aspect-[4/3] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src="/images/asparagus-hero.png" 
+                src={getAssetPath('images/asparagus-hero.png')} 
                 alt="Healthy Norfolk fields" 
                 className="w-full h-full object-cover"
               />
@@ -78,12 +79,12 @@ export function Environment() {
             whileInView={{ opacity: 1, x: 0 }}
             className="order-2 md:order-1"
           >
-            <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl skew-x-1 border-8 border-white">
+            <div className="aspect-square rounded-[3rem] shadow-2xl border-8 border-white">
               <img 
-                src="/images/strawberry-fields.png" 
-                alt="Sustainability in action" 
-                className="w-full h-full object-cover"
-              />
+              src={getAssetPath('images/strawberry-fields.png')} 
+              alt="Sustainable Greenhouse" 
+              className="rounded-[3rem] shadow-2xl rotate-[-2deg] border-8 border-white w-full h-full object-cover"
+            />
             </div>
           </motion.div>
           <motion.div 

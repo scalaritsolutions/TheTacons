@@ -1,6 +1,7 @@
 import React from 'react';
-import { motion } from 'motion/react';
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Navigation } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Mail, Phone, MapPin, Clock, Instagram, Facebook, Send, CheckCircle2 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 export function Contact() {
   return (
@@ -71,7 +72,7 @@ export function Contact() {
             className="bg-surface-container-low p-12 rounded-[3rem] border border-primary/5 shadow-2xl relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
-               <MessageSquare size={120} />
+               {/* <MessageSquare size={120} /> Removed as per instruction */}
             </div>
             <h3 className="font-headline text-4xl text-primary mb-10">Send a Note</h3>
             <form className="space-y-8 relative z-10" onSubmit={(e) => e.preventDefault()}>
@@ -112,7 +113,7 @@ export function Contact() {
           <div className="absolute inset-0 bg-primary/10 backdrop-blur-[2px] z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
              <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl text-center space-y-6 scale-90 group-hover:scale-100 transition-transform duration-700">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white mx-auto shadow-lg">
-                   <Navigation size={32} />
+                   {/* <Navigation size={32} /> Removed as per instruction */}
                 </div>
                 <h4 className="font-headline text-3xl text-primary">Open in Maps</h4>
                 <p className="text-on-surface-variant italic font-serif">NR29 5AJ, Rollesby, Norfolk</p>
@@ -120,8 +121,8 @@ export function Contact() {
              </div>
           </div>
           <img 
-            src="/images/farm-shop-interior.png" 
-            alt="Map location overview" 
+            src={getAssetPath('images/farm-shop-interior.png')} 
+            alt="The Tacons Farm Shop" 
             className="w-full h-full object-cover grayscale opacity-40"
           />
           <div className="absolute inset-0 paper-texture pointer-events-none opacity-20" />
