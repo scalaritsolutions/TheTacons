@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which results in the browser rendering the correct route locally.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <title>The Tacons | Premium Norfolk Farm Shop & PYO</title>
     <meta name="description" content="Experience the finest Norfolk produce at The Tacons. From our famous asparagus to seasonal pick-your-own strawberries and pumpkins, we bring the farm to your table." />
     <link rel="icon" type="image/png" href="/TheTacons/images/tacons-logo-favicon.png" />
@@ -11,8 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/TheTacons/assets/index-DoCS7FCs.js"></script>
-    <link rel="stylesheet" crossorigin href="/TheTacons/assets/index-DxYAa8OX.css">
+    <script type="module" crossorigin src="/TheTacons/assets/index-B2DZQlbz.js"></script>
+    <link rel="stylesheet" crossorigin href="/TheTacons/assets/index-CcJpP_mM.css">
   </head>
   <body>
     <div id="root"></div>
