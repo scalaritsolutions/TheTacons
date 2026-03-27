@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, Clock, Info, ArrowRight } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 import { PYOTracker } from '../components/PYOTracker';
 
 const crops = [
@@ -60,7 +61,7 @@ export function PYO() {
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform rotate-2 border-8 border-white">
               <img 
                 className="w-full h-full object-cover" 
-                src="/images/strawberry-fields.png" 
+                src={getAssetPath('/images/strawberry-fields.png')} 
                 alt="Strawberries in field"
               />
             </div>

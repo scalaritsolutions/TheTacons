@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetPath } from '../utils/assets';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ShoppingBasket, ShoppingCart, Leaf } from 'lucide-react';
 
@@ -7,11 +8,11 @@ interface FreshListProps {
   onClose: () => void;
 }
 
-const currentHarvest = [
-  { name: 'Rollesby Asparagus', price: '£4.50', unit: 'bunch', picked: '7:45 AM', image: '/images/asparagus-hero.png' },
-  { name: 'Early Strawberries', price: '£3.80', unit: 'punnet', picked: '8:20 AM', image: '/images/strawberry-fields.png' },
-  { name: 'Fresh Carrots', price: '£1.50', unit: 'kg', picked: '7:30 AM', image: '/images/organic-carrots.png' },
-  { name: 'Free Range Eggs', price: '£2.80', unit: 'half dozen', picked: 'Daily', image: '/images/eggs-local.png' },
+const currentFresh = [
+  { name: 'Rollesby Asparagus', price: '£4.50 / bundle', image: getAssetPath('images/asparagus-hero.png'), time: '7:45 AM' },
+  { name: 'Early Strawberries', price: '£3.80 / punnet', image: getAssetPath('images/strawberry-fields.png'), time: '8:20 AM' },
+  { name: 'Fresh Carrots', price: '£1.50 / kg', image: getAssetPath('images/organic-carrots.png'), time: '7:30 AM' },
+  { name: 'Free Range Eggs', price: '£2.80 / half dozen', image: getAssetPath('images/eggs-local.png'), time: 'Daily' },
 ];
 
 export function FreshList({ isOpen, onClose }: FreshListProps) {
@@ -40,8 +41,8 @@ export function FreshList({ isOpen, onClose }: FreshListProps) {
               </button>
             </div>
 
-            <div className="space-y-8">
-              {currentHarvest.map((item, i) => (
+            <div className="space-y-6">
+              {currentFresh.map((item, i) => (
                 <motion.div 
                   key={item.name}
                   initial={{ opacity: 0, x: 20 }}

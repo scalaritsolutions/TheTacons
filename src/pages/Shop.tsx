@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ShoppingBasket, Search, Star } from 'lucide-react';
 import { FreshList } from '../components/FreshList';
+import { getAssetPath } from '../utils/assets';
 
 const categories = ['All', 'Vegetables', 'Fruit', 'Dairy', 'Bakery', 'Pantry'];
 
@@ -11,7 +12,7 @@ const products = [
     price: '£4.50',
     unit: 'bundle',
     category: 'Vegetables',
-    image: '/images/asparagus-hero.png',
+    image: getAssetPath('images/asparagus-hero.png'),
     tag: 'Best Seller'
   },
   {
@@ -19,7 +20,7 @@ const products = [
     price: '£3.80',
     unit: 'punnet',
     category: 'Fruit',
-    image: '/images/strawberry-fields.png',
+    image: getAssetPath('images/strawberry-fields.png'),
     tag: 'Picked Today'
   },
   {
@@ -27,7 +28,7 @@ const products = [
     price: '£2.80',
     unit: '6 pack',
     category: 'Dairy',
-    image: '/images/eggs-local.png',
+    image: getAssetPath('images/eggs-local.png'),
     tag: 'Local'
   },
   {
@@ -35,7 +36,7 @@ const products = [
     price: '£4.20',
     unit: 'loaf',
     category: 'Bakery',
-    image: '/images/artisan-bread.png',
+    image: getAssetPath('images/artisan-bread.png'),
     tag: 'Fresh'
   },
   {
@@ -43,7 +44,7 @@ const products = [
     price: '£6.50',
     unit: 'jar',
     category: 'Pantry',
-    image: '/images/honey-jar.png',
+    image: getAssetPath('images/honey-jar.png'),
     tag: 'Norfolk'
   },
   {
@@ -51,7 +52,7 @@ const products = [
     price: '£1.50',
     unit: 'kg',
     category: 'Vegetables',
-    image: '/images/organic-carrots.png',
+    image: getAssetPath('images/organic-carrots.png'),
     tag: 'Organic'
   }
 ];

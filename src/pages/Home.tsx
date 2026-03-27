@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getAssetPath } from '../utils/assets';
 import { motion } from 'motion/react';
 import { ArrowRight, Leaf, Sprout, Calendar, ShoppingBasket } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -48,7 +49,7 @@ export function Home() {
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl transform rotate-2 relative z-10 border-8 border-white">
               <img 
                 className="w-full h-full object-cover" 
-                src="/images/farm-shop-interior.png" 
+                src={getAssetPath('images/farm-shop-interior.png')}
                 alt="The Tacons Farm Shop Interior"
               />
             </div>
@@ -101,7 +102,7 @@ export function Home() {
             className="md:w-1/2"
           >
             <img 
-              src="/images/asparagus-hero.png" 
+              src={getAssetPath('images/asparagus-hero.png')}
               alt="Fresh Rollesby Asparagus" 
               className="rounded-[3rem] shadow-2xl rotate-[-2deg] border-8 border-white"
             />

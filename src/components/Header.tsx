@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import { getAssetPath } from '../utils/assets';
 import { ShoppingBasket, Menu, X, MapPin, ChevronDown, Leaf, Star, Calendar, Info } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 
@@ -47,6 +48,11 @@ export function Header() {
       <div className="flex justify-between items-center px-6 md:px-12 py-5 w-full max-w-screen-2xl mx-auto">
         <Link to="/" className="text-2xl font-headline font-bold text-primary uppercase tracking-widest flex items-center gap-2">
           <span className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">T</span>
+          <img 
+            src={getAssetPath('images/tacons-logo.png')} 
+            alt="The Tacons Logo" 
+            className="w-8 h-8 object-contain brightness-0 invert"
+          />
           The Tacons
         </Link>
 
