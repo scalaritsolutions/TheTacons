@@ -1,0 +1,5 @@
+{
+  "name": "The Tacons Farm Shop",
+  "description": "High-fidelity farm shop and PYO experience from Rollesby, Norfolk.",
+  "requestFramePermissions": ["geolocation"]
+}

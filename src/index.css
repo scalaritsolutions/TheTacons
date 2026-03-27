@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-primary: #173826;
+  --color-primary-container: #2e4f3b;
+  --color-secondary: #735c00;
+  --color-secondary-fixed: #ffe088;
+  --color-background: #fbf9f5;
+  --color-surface: #fbf9f5;
+  --color-surface-container-low: #f5f3ef;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #424843;
+  --color-outline: #727972;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.paper-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  opacity: 0.05;
+}
